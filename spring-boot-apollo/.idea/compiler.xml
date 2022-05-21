@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="app" />
+        <module name="sentinel" />
+        <module name="netflix-archaius" />
+        <module name="spring-boot-dubbo-api" />
+        <module name="spring-boot-encrypt" />
+        <module name="spring-boot-dubbo-consumer" />
+        <module name="spring-cloud-zuul-ratelimit" />
+        <module name="dubbo" />
+        <module name="dynamic-datasource" />
+        <module name="spring-cloud-zuul" />
+        <module name="spring-mvc-logger" />
+        <module name="spring-cloud-gateway" />
+        <module name="spring-boot-dubbo-provider" />
+        <module name="spring-cloud-logger" />
+        <module name="spring-boot-logger" />
+        <module name="apollo-agent" />
+        <module name="properties-keeper" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

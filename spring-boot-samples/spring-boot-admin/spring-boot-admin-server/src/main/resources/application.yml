@@ -1,0 +1,11 @@
+server:
+  port: 9091
+
+
+spring:
+  application:
+    admin:
+      enabled: true
+  output:
+    ansi:
+      enabled: ALWAYS

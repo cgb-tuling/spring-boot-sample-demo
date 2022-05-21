@@ -1,0 +1,4 @@
+canal-monitor-mysql:
+  hostname: localhost
+  port: 11111
+  tableName: fas4.0

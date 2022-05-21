@@ -1,0 +1,18 @@
+dn: dc=demo,dc=com
+objectClass: top
+objectClass: domain
+
+dn: ou=people,dc=demo,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+dn: uid=user1,ou=people,dc=demo,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: jeiker
+sn: xiao
+uid: jeikerid
+userPassword: {SHA}nFCebWjxfaLbHHG1Qk5UU4trbvQ=

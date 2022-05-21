@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="org.example.dao.UserDao" >
+
+    <resultMap id="user_mapper" type="User">
+        <id column="id" property="id" jdbcType="BIGINT" />
+        <result column="user_name" property="userName" jdbcType="VARCHAR" />
+        <result column="sex" property="sex" />
+        <result column="birth_day" property="birthDay" jdbcType="DATE" />
+        <result column="education" property="education" />
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+        <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <sql id="user_columns">
+        id, user_name, sex, birth_day, education, create_time, update_time
+    </sql>
+
+    <select id="findUsers" resultMap="user_mapper">
+        select <include refid="user_columns" />
+        from person a where a.name
+    </select>
+
+    <select id="findUserById" resultMap="user_mapper">
+        select <include refid="user_columns" />
+        from user
+        where id = #{id}
+    </select>
+    <!--    <![CDATA[ >= ]]>-->
+    <insert id="insertUer" useGeneratedKeys="true" keyProperty="id">
+        insert into user
+        <trim prefix="(" suffix=")" suffixOverrides="," >
+            <if test="userName != null" >user_name,</if>
+            <if test="sex != null" >sex,</if>
+            <if test="birthDay != null" >birth_day,</if>
+            <if test="education != null" >education,</if>
+            <if test="createTime != null" >create_time,</if>
+            <if test="updateTime != null" >update_time,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides="," >
+            <if test="userName != null" >#{userName},</if>
+            <if test="sex != null" >#{sex},</if>
+            <if test="birthDay != null" >#{birthDay},</if>
+            <if test="education != null" >#{education},</if>
+            <if test="createTime != null" >#{createTime},</if>
+            <if test="updateTime != null" >#{updateTime},</if>
+        </trim>
+    </insert>
+
+</mapper>

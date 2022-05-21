@@ -1,0 +1,17 @@
+### JsonController
+GET http://localhost:8080/json/user
+
+###
+GET http://localhost:8080/json/list
+
+###
+GET http://localhost:8080/json/map
+
+### JsonResultController
+GET http://localhost:8080/jsonresult/user
+
+###
+GET http://localhost:8080/jsonresult/list
+
+###
+GET http://localhost:8080/jsonresult/map

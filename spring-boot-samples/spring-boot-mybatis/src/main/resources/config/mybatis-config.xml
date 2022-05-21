@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+    <settings>
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+
+    <typeAliases>
+        <typeAlias alias="User" type="org.example.entity.User"/>
+    </typeAliases>
+
+    <typeHandlers>
+        <!-- 如果此处配置了映射, 则 BaseEnumTypeHandler 中就不需要 @MappedTypes 注解和 application.xml 中不需要设置属性 mybatis.type-handlers-package 值 -->
+<!--        <typeHandler handler="org.example.handle.BaseEnumTypeHandler" javaType="org.example.entity.EducationEnum" />
+        <typeHandler handler="org.example.handle.BaseEnumTypeHandler" javaType="org.example.entity.SexEnum" /> -->
+
+<!--        <typeHandler handler="org.apache.ibatis.type.EnumOrdinalTypeHandler" javaType="org.example.enums.EducationEnum" />-->
+<!--        <typeHandler handler="org.apache.ibatis.type.EnumOrdinalTypeHandler" javaType="org.example.enums.SexEnum" />-->
+    </typeHandlers>
+
+</configuration>
+

@@ -1,0 +1,6 @@
+spring:
+  jackson:
+    serialization:
+      WRITE_ENUMS_USING_TO_STRING: true
+#      WRITE_ENUMS_USING_INDEX: true
+#      WRITE_ENUM_KEYS_USING_INDEX: true

@@ -1,0 +1,16 @@
+spring:
+  rabbitmq:
+    host: localhost
+    username: admin
+    password: 123456
+    port: 5672
+  cloud:
+    stream:
+      rabbit:
+        bindings:
+          operateLogTopic:
+            group: springboot-stream-changeDbInfo
+  application:
+    name: springboot-stream-changeDbInfo
+server:
+  port: 8080

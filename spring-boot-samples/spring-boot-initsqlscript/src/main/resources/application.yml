@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://192.168.61.130:3306/test
+    username: root
+    password: 123456
+    initialization-mode: ALWAYS
+    platform: mysql
+    schema:
+      - classpath:sql/schema-mysql.sql
+      - classpath:sql/procedure.sql
+    data: classpath:sql/data.sql
+    # 默认为 ;
+    separator: $$$
+logging:
+  level:
+    root: info

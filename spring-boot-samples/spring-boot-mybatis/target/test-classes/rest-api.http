@@ -1,0 +1,19 @@
+POST http://localhost:8080/user/save
+Content-Type: application/json
+
+{
+  "userName": "obito",
+  "sex": 0,
+  "birthDay": "2020-01-01",
+  "education": "HIGH",
+  "createTime": "2020-10-12 12:00:03",
+  "updateTime": "2020-10-14 12:00:03"
+}
+###
+GET http://localhost:8080/getUser/2
+
+###
+GET http://localhost:8080/user/insert
+
+###
+GET http://localhost:8080/user/findUsers

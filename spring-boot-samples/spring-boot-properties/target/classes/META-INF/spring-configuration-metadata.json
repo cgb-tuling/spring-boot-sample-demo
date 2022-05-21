@@ -1,0 +1,57 @@
+{
+  "groups": [
+    {
+      "name": "",
+      "type": "org.example.config.PostInfo",
+      "sourceType": "org.example.config.PostInfo"
+    },
+    {
+      "name": "com.didispace",
+      "type": "org.example.config.FooProperties",
+      "sourceType": "org.example.config.FooProperties"
+    },
+    {
+      "name": "url",
+      "type": "org.example.config.MicroServiceUrl",
+      "sourceType": "org.example.config.MicroServiceUrl"
+    }
+  ],
+  "properties": [
+    {
+      "name": "com.didispace.database-platform",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.FooProperties"
+    },
+    {
+      "name": "com.didispace.foo",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.FooProperties"
+    },
+    {
+      "name": "content",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.PostInfo"
+    },
+    {
+      "name": "title",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.PostInfo"
+    },
+    {
+      "name": "url.order-url",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.MicroServiceUrl"
+    },
+    {
+      "name": "url.shopping-url",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.MicroServiceUrl"
+    },
+    {
+      "name": "url.user-url",
+      "type": "java.lang.String",
+      "sourceType": "org.example.config.MicroServiceUrl"
+    }
+  ],
+  "hints": []
+}

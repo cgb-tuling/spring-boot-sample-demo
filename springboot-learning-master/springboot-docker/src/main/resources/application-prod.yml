@@ -1,0 +1,12 @@
+spring:
+  redis:
+    host: my-redis # docker-compose 配置的redis服务名
+    port: 6379
+    password: foobared
+    lettuce:
+      pool:
+        max-active: 20
+        max-idle: 20
+        min-idle: 10
+
+env: prod

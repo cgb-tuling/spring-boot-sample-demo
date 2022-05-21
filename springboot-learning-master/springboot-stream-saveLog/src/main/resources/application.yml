@@ -1,0 +1,17 @@
+spring:
+  rabbitmq:
+    host: localhost
+    username: admin
+    password: 123456
+    port: 5672
+  cloud:
+    stream:
+      rabbit:
+        bindings:
+          dbConfigTopic:
+            group: springboot-stream-saveLog
+  application:
+    name: springboot-stream-saveLog
+server:
+  port: 8081
+

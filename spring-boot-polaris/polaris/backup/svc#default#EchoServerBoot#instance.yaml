@@ -1,0 +1,38 @@
+---
+code: 200000
+info: "execute success"
+type: "INSTANCE"
+service:
+  name: "EchoServerBoot"
+  namespace: "default"
+  ports: ""
+  business: ""
+  department: ""
+  cmdb_mod1: ""
+  cmdb_mod2: ""
+  cmdb_mod3: ""
+  comment: ""
+  owners: "Polaris"
+  ctime: "2022-02-08 17:32:16"
+  mtime: "2022-02-08 17:32:16"
+  revision: "93938ce7bd68a397a44085ff1c064634dd033b60"
+  platform_id: ""
+instances:
+- id: "1c0385ae248529ef1f96a4a751505f226121fd9f"
+  service: "EchoServerBoot"
+  namespace: "default"
+  host: "10.7.8.37"
+  port: 11010
+  weight: 100
+  healthCheck:
+    type: "HEARTBEAT"
+    heartbeat:
+      ttl: 30
+  healthy: true
+  isolate: false
+  metadata:
+    version: ""
+    protocol: ""
+  mtime: "2022-02-08 17:35:24"
+  revision: "f9aa8256461340e587363a8f0144f052"
+  enableHealthCheck: true
