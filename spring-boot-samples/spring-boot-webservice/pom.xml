@@ -20,6 +20,9 @@
     <modules>
         <module>client</module>
         <module>server</module>
+        <module>spring-boot-webservice-client</module>
+        <module>spring-boot-webservice-cxf</module>
+        <module>spring-boot-webservice-jaxws</module>
     </modules>
 
     <build>

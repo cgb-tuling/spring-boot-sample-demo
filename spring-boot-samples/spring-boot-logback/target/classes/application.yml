@@ -1,9 +1,0 @@
-logging:
-  config: classpath:logback.xml
-  level:
-    org.example: trace
-
-spring:
-  output:
-    ansi:
-      enabled: detect

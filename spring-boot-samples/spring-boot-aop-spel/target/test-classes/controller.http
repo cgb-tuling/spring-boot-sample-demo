@@ -1,1 +1,0 @@
-GET http://localhost:8080/demo/echo?text1=ad&text2=1123

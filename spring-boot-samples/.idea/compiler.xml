@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
-    <option name="BUILD_PROCESS_HEAP_SIZE" value="1024" />
-    <option name="BUILD_PROCESS_ADDITIONAL_VM_OPTIONS" value="-Djps.track.ap.dependencies=false" />
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -12,9 +9,9 @@
         <module name="spring-boot-profile" />
         <module name="spring-boot-aop-spel" />
         <module name="spring-boot-actuator-prometheus-grafana" />
-        <module name="spring-boot-enumeration" />
-        <module name="spring-boot-easycode" />
         <module name="spring-boot-retry" />
+        <module name="spring-boot-easycode" />
+        <module name="spring-boot-enumeration" />
         <module name="spring-boot-mybatis-plus-enum" />
         <module name="spring-boot-mybatis-enum-config" />
         <module name="spring-boot-elasticsearch" />
@@ -28,44 +25,49 @@
         <module name="spring-boot-slf4j" />
         <module name="spring-boot-activemq" />
         <module name="spring-boot-druid" />
-        <module name="spring-boot-web" />
         <module name="spring-boot-velocity" />
+        <module name="spring-boot-web" />
         <module name="spring-boot-admin-server" />
         <module name="spring-boot-lock-redis" />
+        <module name="spring-boot-kafka" />
         <module name="spring-boot-camel" />
         <module name="spring-boot-starter-super-scheduled" />
         <module name="spring-boot-batch-hello-world" />
         <module name="spring-boot-annotation-websocket" />
         <module name="spring-batch-tasklet" />
         <module name="spring-boot-rabbitmq" />
-        <module name="spring-boot-elastic-job" />
         <module name="spring-boot-session" />
+        <module name="spring-boot-elastic-job" />
         <module name="spring-boot-properties" />
+        <module name="spring-boot-hsqldb" />
         <module name="server" />
         <module name="easyexcel-import-project" />
-        <module name="spring-boot-hsqldb" />
         <module name="spring-boot-enum-jackson" />
         <module name="spring-boot-jackson" />
+        <module name="spring-boot-poi-ooxml" />
         <module name="spring-boot-native" />
         <module name="spring-boot-ehcache" />
         <module name="spring-cloud-data-flow-server" />
         <module name="spring-boot-task" />
-        <module name="spring-boot-enum-fastjson" />
+        <module name="spring-boot-webservice-client" />
         <module name="spring-boot-transactional" />
+        <module name="spring-boot-enum-fastjson" />
         <module name="spring-boot-sample-project" />
         <module name="spring-boot-filter" />
         <module name="spring-boot-auto-configure" />
         <module name="spring-boot-cache" />
+        <module name="spring-boot-sharedsession" />
         <module name="spring-boot-restTemplate" />
-        <module name="spring-boot-mail" />
         <module name="javastack-spring-boot-starter-sample" />
-        <module name="spring-boot-elasticjob-lite" />
-        <module name="spring-boot-cors" />
+        <module name="spring-boot-mail" />
         <module name="spring-boot-encrypt" />
+        <module name="spring-boot-cors" />
+        <module name="spring-boot-elasticjob-lite" />
         <module name="spring-boot-redis" />
         <module name="spring-boot-log4j" />
         <module name="spring-batch-itemwriter" />
         <module name="spring-boot-logback" />
+        <module name="spring-boot-xmldom4j" />
         <module name="spring-boot-ldap" />
         <module name="spring-boot-session-websocket" />
         <module name="spring-boot-mybatis-optional" />
@@ -77,6 +79,8 @@
         <module name="spring-boot-spring-websocket" />
         <module name="springboot-dynamic-datasource" />
         <module name="spring-boot-undertow" />
+        <module name="spring-boot-gson" />
+        <module name="spring-boot-ftpclient" />
         <module name="spring-boot-lock-jdbc" />
         <module name="spring-boot-random" />
         <module name="spring-boot-enum-jackson-serialize" />
@@ -88,9 +92,9 @@
         <module name="spring-boot-lock-gemfire" />
         <module name="spring-boot-mybatis" />
         <module name="spring-boot-liquibase" />
+        <module name="spring-boot-scope" />
         <module name="spring-boot-swagger2" />
         <module name="spring-boot-json-result" />
-        <module name="spring-boot-scope" />
         <module name="spring-boot-swagger3" />
         <module name="spring-boot-mvc" />
         <module name="spring-boot-thymeleaf" />
@@ -99,38 +103,46 @@
         <module name="spring-boot-interceptor" />
         <module name="spring-boot-weixin" />
         <module name="spring-boot-logging-change-logging-level" />
+        <module name="spring-boot-udp" />
+        <module name="spring-boot-httpclient" />
         <module name="spring-boot-jdbc" />
-        <module name="spring-boot-index" />
+        <module name="spring-boot-jwt" />
         <module name="spring-boot-initsqlscript" />
+        <module name="spring-boot-index" />
         <module name="spring-boot-batch-task" />
         <module name="spring-boot-log4j2" />
         <module name="spring-boot-shiro" />
         <module name="spring-boot-flyway" />
         <module name="spring-boot-banner" />
-        <module name="spring-batch-capitalize-names" />
         <module name="spring-boot-pdf" />
+        <module name="spring-batch-capitalize-names" />
         <module name="spring-boot-excel" />
         <module name="spring-boot-first" />
         <module name="spring-boot-lucence" />
+        <module name="spring-boot-mqtt" />
         <module name="spring-boot-jdk-schedule" />
         <module name="spring-boot-canal" />
-        <module name="spring-boot-jpa" />
         <module name="spring-boot-actuator" />
+        <module name="spring-boot-jpa" />
+        <module name="spring-boot-webservice-jaxws" />
         <module name="spring-boot-listener" />
-        <module name="spring-boot-zookeeper" />
         <module name="client" />
+        <module name="spring-boot-zookeeper" />
         <module name="spring-boot-validation" />
-        <module name="spring-boot-war" />
         <module name="spring-batch-scheduler" />
+        <module name="spring-boot-upload" />
+        <module name="spring-boot-war" />
         <module name="spring-boot-features" />
         <module name="spring-boot-ssl" />
         <module name="spring-boot-admin-client" />
         <module name="spring-batch-embedded-database" />
         <module name="spring-boot-exception" />
+        <module name="spring-boot-memcached" />
         <module name="spring-boot-json-result1" />
+        <module name="spring-boot-webservice-cxf" />
         <module name="dubbo-provider" />
-        <module name="spring-boot-aop" />
         <module name="spring-boot-security" />
+        <module name="spring-boot-aop" />
         <module name="spring-boot-mongodb" />
         <module name="javastack-spring-boot-starter" />
         <module name="spring-boot-neo4j" />
@@ -142,10 +154,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct-processor/1.4.2.Final/mapstruct-processor-1.4.2.Final.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/mapstruct/mapstruct/1.4.2.Final/mapstruct-1.4.2.Final.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
-          <entry name="$MAVEN_REPOSITORY$/org/projectlombok/lombok-mapstruct-binding/0.2.0/lombok-mapstruct-binding-0.2.0.jar" />
+          <entry name="$PROJECT_DIR$/../../../../repository/org/mapstruct/mapstruct-processor/1.4.2.Final/mapstruct-processor-1.4.2.Final.jar" />
+          <entry name="$PROJECT_DIR$/../../../../repository/org/mapstruct/mapstruct/1.4.2.Final/mapstruct-1.4.2.Final.jar" />
+          <entry name="$PROJECT_DIR$/../../../../repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+          <entry name="$PROJECT_DIR$/../../../../repository/org/projectlombok/lombok-mapstruct-binding/0.2.0/lombok-mapstruct-binding-0.2.0.jar" />
         </processorPath>
         <module name="spring-boot-mapstruct" />
       </profile>
@@ -170,7 +182,6 @@
       <module name="spring-boot-activemq" options="-parameters" />
       <module name="spring-boot-actuator" options="-parameters" />
       <module name="spring-boot-actuator-prometheus-grafana" options="-parameters" />
-      <module name="spring-boot-admin" options="-parameters" />
       <module name="spring-boot-admin-authentication" options="-parameters" />
       <module name="spring-boot-admin-client" options="-parameters" />
       <module name="spring-boot-admin-server" options="-parameters" />
@@ -188,14 +199,12 @@
       <module name="spring-boot-cors" options="-parameters" />
       <module name="spring-boot-docker" options="-parameters" />
       <module name="spring-boot-druid" options="-parameters" />
-      <module name="spring-boot-dubbo" options="-parameters" />
       <module name="spring-boot-easycode" options="-parameters" />
       <module name="spring-boot-ehcache" options="-parameters" />
       <module name="spring-boot-elastic-job" options="-parameters" />
       <module name="spring-boot-elasticjob-lite" options="-parameters" />
       <module name="spring-boot-elasticsearch" options="-parameters" />
       <module name="spring-boot-encrypt" options="-parameters" />
-      <module name="spring-boot-enum" options="-parameters" />
       <module name="spring-boot-enum-convert" options="-parameters" />
       <module name="spring-boot-enum-fastjson" options="-parameters" />
       <module name="spring-boot-enum-jackson" options="-parameters" />
@@ -209,8 +218,11 @@
       <module name="spring-boot-first" options="-parameters" />
       <module name="spring-boot-flyway" options="-parameters" />
       <module name="spring-boot-freemarker" options="-parameters" />
+      <module name="spring-boot-ftpclient" options="-parameters" />
+      <module name="spring-boot-gson" options="-parameters" />
       <module name="spring-boot-h2" options="-parameters" />
       <module name="spring-boot-hsqldb" options="-parameters" />
+      <module name="spring-boot-httpclient" options="-parameters" />
       <module name="spring-boot-index" options="-parameters" />
       <module name="spring-boot-initsqlscript" options="-parameters" />
       <module name="spring-boot-interceptor" options="-parameters" />
@@ -221,6 +233,8 @@
       <module name="spring-boot-jpa" options="-parameters" />
       <module name="spring-boot-json-result" options="-parameters" />
       <module name="spring-boot-json-result1" options="-parameters" />
+      <module name="spring-boot-jwt" options="-parameters" />
+      <module name="spring-boot-kafka" options="-parameters" />
       <module name="spring-boot-ldap" options="-parameters" />
       <module name="spring-boot-liquibase" options="-parameters" />
       <module name="spring-boot-listener" options="-parameters" />
@@ -235,7 +249,9 @@
       <module name="spring-boot-lucence" options="-parameters" />
       <module name="spring-boot-mail" options="-parameters" />
       <module name="spring-boot-mapstruct" options="-parameters" />
+      <module name="spring-boot-memcached" options="-parameters" />
       <module name="spring-boot-mongodb" options="-parameters" />
+      <module name="spring-boot-mqtt" options="-parameters" />
       <module name="spring-boot-mvc" options="-parameters" />
       <module name="spring-boot-mybatis" options="-parameters" />
       <module name="spring-boot-mybatis-enum" options="-parameters" />
@@ -246,6 +262,7 @@
       <module name="spring-boot-native" options="-parameters" />
       <module name="spring-boot-neo4j" options="-parameters" />
       <module name="spring-boot-pdf" options="-parameters" />
+      <module name="spring-boot-poi-ooxml" options="-parameters" />
       <module name="spring-boot-profile" options="-parameters" />
       <module name="spring-boot-properties" options="-parameters" />
       <module name="spring-boot-quartz" options="-parameters" />
@@ -261,6 +278,7 @@
       <module name="spring-boot-servlet" options="-parameters" />
       <module name="spring-boot-session" options="-parameters" />
       <module name="spring-boot-session-websocket" options="-parameters" />
+      <module name="spring-boot-sharedsession" options="-parameters" />
       <module name="spring-boot-shell" options="-parameters" />
       <module name="spring-boot-shiro" options="-parameters" />
       <module name="spring-boot-slf4j" options="-parameters" />
@@ -275,13 +293,17 @@
       <module name="spring-boot-thymeleaf" options="-parameters" />
       <module name="spring-boot-tio-websocket" options="-parameters" />
       <module name="spring-boot-transactional" options="-parameters" />
+      <module name="spring-boot-udp" options="-parameters" />
       <module name="spring-boot-undertow" options="-parameters" />
+      <module name="spring-boot-upload" options="-parameters" />
       <module name="spring-boot-validation" options="-parameters" />
-      <module name="spring-boot-velocity" options="" />
       <module name="spring-boot-war" options="-parameters" />
       <module name="spring-boot-web" options="-parameters" />
-      <module name="spring-boot-webservice" options="-parameters" />
+      <module name="spring-boot-webservice-client" options="-parameters" />
+      <module name="spring-boot-webservice-cxf" options="-parameters" />
+      <module name="spring-boot-webservice-jaxws" options="-parameters" />
       <module name="spring-boot-weixin" options="-parameters" />
+      <module name="spring-boot-xmldom4j" options="-parameters" />
       <module name="spring-boot-zookeeper" options="-parameters" />
       <module name="spring-cloud-data-flow-server" options="-parameters" />
       <module name="springboot-dynamic-datasource" options="-parameters" />

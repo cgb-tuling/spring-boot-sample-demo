@@ -118,6 +118,18 @@
         <module>spring-boot-enum/spring-boot-mybatis-enum</module>
         <module>spring-boot-jackson</module>
         <module>spring-boot-executor</module>
+        <module>spring-boot-poi-ooxml</module>
+        <module>spring-boot-ftpclient</module>
+        <module>spring-boot-gson</module>
+        <module>spring-boot-httpclient</module>
+        <module>spring-boot-jwt</module>
+        <module>spring-boot-kafka</module>
+        <module>spring-boot-memcached</module>
+        <module>spring-boot-mqtt</module>
+        <module>spring-boot-sharedsession</module>
+        <module>spring-boot-udp</module>
+        <module>spring-boot-upload</module>
+        <module>spring-boot-xmldom4j</module>
     </modules>
 
     <properties>

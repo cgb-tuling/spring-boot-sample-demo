@@ -1,5 +1,0 @@
-org.example.SpringIndexApplication=org.springframework.stereotype.Component,org.springframework.boot.SpringBootConfiguration,org.example.SpringIndexApplication
-org.example.controller.TestController=org.springframework.stereotype.Component
-org.example.service.OrderService=org.springframework.stereotype.Component
-org.example.service.TestService=org.springframework.stereotype.Component
-org.example.service.UserService=org.springframework.stereotype.Component
