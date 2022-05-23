@@ -1,0 +1,45 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://test.com/webservice/pda"
+           targetNamespace="http://test.com/webservice/pda" elementFormDefault="qualified">
+
+    <!--登录方法-->
+    <xs:element name="PdaLoginRequest">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="username" type="xs:string"/>
+                <xs:element name="password" type="xs:string"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <!--登录响应-->
+    <xs:element name="PdaLoginResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="request-result" type="tns:LoginRequestResult"/>
+                <xs:element name="menu-result" type="tns:MenuList"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:complexType name="MenuList">
+        <xs:sequence>
+            <xs:element minOccurs="0" maxOccurs="unbounded" name="menu" nillable="true" type="tns:Menu"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="Menu">
+        <xs:sequence>
+            <xs:element  name="menu" type="xs:string"/>
+            <xs:element  name="url" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <!--登录响应结果-->
+    <xs:complexType name="LoginRequestResult">
+        <xs:sequence>
+            <xs:element name="request_result" type="xs:boolean"/>
+            <xs:element name="result_desc" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+</xs:schema>
