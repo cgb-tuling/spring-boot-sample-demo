@@ -1,15 +1,33 @@
 ########## 配置数据源 （Druid）##########
+logging:
+  level:
+    cn.javastack.springboot: debug
+    druid.sql.Statement: debug
+#druid:
+#  log:
+#    stmt:
+#      executableSql: true
+  map-underscore-to-camel-case: true # 是否开启自动驼峰命名规则（camel case）映射
+  cache-enabled: false  #配置的缓存的全局开关
+  #配置JdbcTypeForNull
+  jdbc-type-for-null: 'null'
+  lazy-loading-enabled: true  #延时加载的开关. 默认false
+  # 不需要mybatis记录  sql log
+  log-impl: org.apache.ibatis.logging.nologging.NoLoggingImpl
 spring:
   datasource:
     ########## JDBC 基本配置 ##########
     username: root
-    password: 123456
+    password: tt19950826TT.
     driver-class-name: com.mysql.cj.jdbc.Driver   # mysql8 的连接驱动
-    url: jdbc:mysql://124.71.38.83/test?serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://124.71.38.83:3306/test?serverTimezone=Asia/Shanghai
     platform: mysql                               # 数据库类型
     type: com.alibaba.druid.pool.DruidDataSource  # 指定数据源类型
     ########## 连接池 配置 ##########
     druid:
+#      log:
+#        stmt:
+#          executableSql: true
       # 配置初始化大小、最小、最大
       initial-size: 5
       minIdle: 10
@@ -38,7 +56,7 @@ spring:
       # 连接池中的minIdle数量以内的连接，空闲时间超过minEvictableIdleTimeMillis，则会执行keepAlive操作
       keepAlive: true
       # Spring 监控，利用aop 对指定接口的执行时间，jdbc数进行记录
-      aop-patterns: "com.springboot.template.dao.*"
+      aop-patterns: "cn.javastack.springboot.druid.mapper.*"
       ########### 启用内置过滤器（第一个 stat必须，否则监控不到SQL）##########
       filters: stat,wall,log4j2
       # 自己配置监控统计拦截的filter
@@ -54,10 +72,23 @@ spring:
         slf4j:
           enabled: true
           statement-log-error-enabled: true
-          statement-create-after-log-enabled: false
-          statement-close-after-log-enabled: false
+#          statement-create-after-log-enabled: false
+#          statement-close-after-log-enabled: false
           result-set-open-after-log-enabled: false
           result-set-close-after-log-enabled: false
+          statementCloseAfterLogEnabled: false
+          statementCreateAfterLogEnabled: false
+          statementExecutableSqlLogEnable: true
+          statementExecuteAfterLogEnabled: false
+          statementExecuteBatchAfterLogEnabled: false
+          statementExecuteQueryAfterLogEnabled: false
+          statementExecuteUpdateAfterLogEnabled: false
+          statementLogEnabled: true
+          connectionLogEnabled: false
+          resultSetLogEnabled: true
+          statementParameterSetLogEnabled: false
+          statementPrepareAfterLogEnabled: false
+          statementPrepareCallAfterLogEnabled: false
       ########## 配置WebStatFilter，用于采集web关联监控的数据 ##########
       web-stat-filter:
         enabled: true                   # 启动 StatFilter
