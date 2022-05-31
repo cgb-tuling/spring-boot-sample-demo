@@ -130,8 +130,8 @@
         <module>spring-boot-udp</module>
         <module>spring-boot-xmldom4j</module>
         <module>spring-boot-webservice/spring-boot-ws-jaxb2</module>
-        <module>spring-boot-section-upload</module>
         <module>spring-boot-upload-file</module>
+        <module>spring-boot-redis-ratelimit</module>
     </modules>
 
     <properties>
