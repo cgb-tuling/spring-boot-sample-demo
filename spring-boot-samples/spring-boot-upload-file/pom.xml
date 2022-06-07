@@ -21,6 +21,7 @@
         <module>spring-boot-segment-upload</module>
         <module>spring-boot-segment-upload1</module>
         <module>springboot-slice-upload</module>
+        <module>spring-boot-uploading-file</module>
     </modules>
 
 </project>
