@@ -10,6 +10,7 @@ import javax.validation.constraints.NotNull;
 
 /**
  * 分组校验
+ * @author yuancetian
  */
 @Data
 public class UserGroupDTO {
