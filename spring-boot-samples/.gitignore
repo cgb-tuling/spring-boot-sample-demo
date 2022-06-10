@@ -54,3 +54,4 @@ logs/
 *.iws
 
 !/.idea/
+/.idea/workspace.xml
