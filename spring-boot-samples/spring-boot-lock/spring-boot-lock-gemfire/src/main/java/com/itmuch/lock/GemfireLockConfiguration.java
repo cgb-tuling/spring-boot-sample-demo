@@ -47,9 +47,7 @@ public class GemfireLockConfiguration {
     //    return new CacheCreation();
     //}
 
-    private DistributedLockService distributedLockService;
-
-    private DLockService dLockService;
+    private DLockService dLockService= (DLockService) DistributedLockService.getServiceNamed("GemfireLockService");
 
 
     public boolean locks() {
