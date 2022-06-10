@@ -53,3 +53,4 @@ logs/
 *.ipr
 *.iws
 
+!/.idea/
