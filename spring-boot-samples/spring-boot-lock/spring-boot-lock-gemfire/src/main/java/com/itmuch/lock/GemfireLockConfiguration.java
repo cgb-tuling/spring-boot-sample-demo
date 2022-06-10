@@ -2,12 +2,17 @@ package com.itmuch.lock;
 
 
 import org.apache.geode.cache.Cache;
+import org.apache.geode.cache.GemFireCache;
 import org.apache.geode.distributed.DistributedLockService;
 import org.apache.geode.distributed.internal.locks.DLockService;
 import org.apache.geode.internal.cache.xmlcache.CacheCreation;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.data.gemfire.CacheFactoryBean;
+import org.springframework.integration.gemfire.store.GemfireMessageStore;
 import org.springframework.integration.gemfire.util.GemfireLockRegistry;
+
+import java.util.Properties;
 
 /**
  * @author itmuch.com
@@ -28,14 +33,19 @@ public class GemfireLockConfiguration {
 //    }
 
     @Bean
-    public GemfireLockRegistry gemfireLockRegistry(Cache cache) {
-        return new GemfireLockRegistry(cache);
+    public GemfireLockRegistry gemfireLockRegistry(GemFireCache gemFireCache) {
+        return new GemfireLockRegistry((Cache) gemFireCache);
     }
 
     @Bean
-    public Cache cache() {
-        return new CacheCreation();
+    public CacheFactoryBean cacheFactoryBean() {
+        return new CacheFactoryBean();
     }
+
+    //@Bean
+    //public Cache cache() {
+    //    return new CacheCreation();
+    //}
 
     private DistributedLockService distributedLockService;
 
