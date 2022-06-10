@@ -132,6 +132,8 @@
         <module>spring-boot-webservice/spring-boot-ws-jaxb2</module>
         <module>spring-boot-upload-file</module>
         <module>spring-boot-redis-ratelimit</module>
+        <module>springboot-echarts</module>
+        <module>springboot-socketio</module>
     </modules>
 
     <properties>

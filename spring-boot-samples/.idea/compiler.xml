@@ -21,6 +21,8 @@
         <module name="spring-boot-docker" />
         <module name="spring-boot-jasypt" />
         <module name="spring-boot-quartz" />
+        <module name="spring-boot-uploading-file" />
+        <module name="spring-boot-ws-jaxb2" />
         <module name="spring-batch-itemreader" />
         <module name="spring-boot-slf4j" />
         <module name="spring-boot-activemq" />
@@ -38,13 +40,16 @@
         <module name="spring-boot-rabbitmq" />
         <module name="spring-boot-session" />
         <module name="spring-boot-elastic-job" />
+        <module name="spring-boot-redis-ratelimit" />
         <module name="spring-boot-properties" />
+        <module name="spring-boot-segment-upload1" />
         <module name="spring-boot-hsqldb" />
         <module name="server" />
         <module name="easyexcel-import-project" />
         <module name="spring-boot-enum-jackson" />
         <module name="spring-boot-jackson" />
         <module name="spring-boot-poi-ooxml" />
+        <module name="spring-boot-segment-upload" />
         <module name="spring-boot-native" />
         <module name="spring-boot-ehcache" />
         <module name="spring-cloud-data-flow-server" />
@@ -73,6 +78,7 @@
         <module name="spring-boot-mybatis-optional" />
         <module name="spring-boot-mybatis-enum" />
         <module name="spring-boot-statemachine" />
+        <module name="springboot-slice-upload" />
         <module name="spring-boot-admin-authentication" />
         <module name="spring-boot-async" />
         <module name="spring-boot-shell" />
@@ -85,6 +91,7 @@
         <module name="spring-boot-random" />
         <module name="spring-boot-enum-jackson-serialize" />
         <module name="spring-boot-tio-websocket" />
+        <module name="springboot-socketio" />
         <module name="spring-boot-enum-convert" />
         <module name="spring-boot-freemarker" />
         <module name="spring-boot-h2" />
@@ -106,6 +113,7 @@
         <module name="spring-boot-udp" />
         <module name="spring-boot-httpclient" />
         <module name="spring-boot-jdbc" />
+        <module name="springboot-echarts" />
         <module name="spring-boot-jwt" />
         <module name="spring-boot-initsqlscript" />
         <module name="spring-boot-index" />
@@ -154,10 +162,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
-          <entry name="$PROJECT_DIR$/../../../../repository/org/mapstruct/mapstruct-processor/1.4.2.Final/mapstruct-processor-1.4.2.Final.jar" />
-          <entry name="$PROJECT_DIR$/../../../../repository/org/mapstruct/mapstruct/1.4.2.Final/mapstruct-1.4.2.Final.jar" />
-          <entry name="$PROJECT_DIR$/../../../../repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
-          <entry name="$PROJECT_DIR$/../../../../repository/org/projectlombok/lombok-mapstruct-binding/0.2.0/lombok-mapstruct-binding-0.2.0.jar" />
+          <entry name="$PROJECT_DIR$/../../../../../repository/org/mapstruct/mapstruct-processor/1.4.2.Final/mapstruct-processor-1.4.2.Final.jar" />
+          <entry name="$PROJECT_DIR$/../../../../../repository/org/mapstruct/mapstruct/1.4.2.Final/mapstruct-1.4.2.Final.jar" />
+          <entry name="$PROJECT_DIR$/../../../../../repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar" />
+          <entry name="$PROJECT_DIR$/../../../../../repository/org/projectlombok/lombok-mapstruct-binding/0.2.0/lombok-mapstruct-binding-0.2.0.jar" />
         </processorPath>
         <module name="spring-boot-mapstruct" />
       </profile>
@@ -269,12 +277,15 @@
       <module name="spring-boot-rabbitmq" options="-parameters" />
       <module name="spring-boot-random" options="-parameters" />
       <module name="spring-boot-redis" options="-parameters" />
+      <module name="spring-boot-redis-ratelimit" options="-parameters" />
       <module name="spring-boot-restTemplate" options="-parameters" />
       <module name="spring-boot-retry" options="-parameters" />
       <module name="spring-boot-sample-project" options="-parameters" />
       <module name="spring-boot-schedule" options="-parameters" />
       <module name="spring-boot-scope" options="-parameters" />
       <module name="spring-boot-security" options="-parameters" />
+      <module name="spring-boot-segment-upload" options="-parameters" />
+      <module name="spring-boot-segment-upload1" options="-parameters" />
       <module name="spring-boot-servlet" options="-parameters" />
       <module name="spring-boot-session" options="-parameters" />
       <module name="spring-boot-session-websocket" options="-parameters" />
@@ -296,6 +307,7 @@
       <module name="spring-boot-udp" options="-parameters" />
       <module name="spring-boot-undertow" options="-parameters" />
       <module name="spring-boot-upload" options="-parameters" />
+      <module name="spring-boot-uploading-file" options="-parameters" />
       <module name="spring-boot-validation" options="-parameters" />
       <module name="spring-boot-war" options="-parameters" />
       <module name="spring-boot-web" options="-parameters" />
@@ -303,10 +315,14 @@
       <module name="spring-boot-webservice-cxf" options="-parameters" />
       <module name="spring-boot-webservice-jaxws" options="-parameters" />
       <module name="spring-boot-weixin" options="-parameters" />
+      <module name="spring-boot-ws-jaxb2" options="-parameters" />
       <module name="spring-boot-xmldom4j" options="-parameters" />
       <module name="spring-boot-zookeeper" options="-parameters" />
       <module name="spring-cloud-data-flow-server" options="-parameters" />
       <module name="springboot-dynamic-datasource" options="-parameters" />
+      <module name="springboot-echarts" options="-parameters" />
+      <module name="springboot-slice-upload" options="-parameters" />
+      <module name="springboot-socketio" options="-parameters" />
     </option>
   </component>
 </project>
