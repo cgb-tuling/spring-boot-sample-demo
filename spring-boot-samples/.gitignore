@@ -2,7 +2,7 @@
 ### Example user template
 
 # IntelliJ project files
-.idea
+.idea/*
 out
 gen
 # Build and Release Folders
@@ -46,12 +46,8 @@ bin-release/
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
-.idea/
-target/
-logs/
+target/*
+logs/*
 *.iml
 *.ipr
 *.iws
-
-!/.idea/
-/.idea/workspace.xml
