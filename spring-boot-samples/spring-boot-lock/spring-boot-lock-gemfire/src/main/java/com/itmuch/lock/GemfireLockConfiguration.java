@@ -11,6 +11,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.gemfire.CacheFactoryBean;
 import org.springframework.integration.gemfire.store.GemfireMessageStore;
 import org.springframework.integration.gemfire.util.GemfireLockRegistry;
+import org.springframework.retry.RetryPolicy;
 
 import java.util.Properties;
 
@@ -25,12 +26,12 @@ public class GemfireLockConfiguration {
 
     }
 
-//    @Bean
-//    public CuratorFramework curatorFramework() {
-//        RetryPolicy retryPolicy = new ExponentialBackoffRetry(1000, 3);
-//        //return new CuratorFrameworkImpl(CuratorFrameworkFactory.builder());
-//        return CuratorFrameworkFactory.newClient(address, retryPolicy);
-//    }
+    //@Bean
+    //public CuratorFramework curatorFramework() {
+    //    RetryPolicy retryPolicy = new ExponentialBackoffRetry(1000, 3);
+    //    //return new CuratorFrameworkImpl(CuratorFrameworkFactory.builder());
+    //    return CuratorFrameworkFactory.newClient(address, retryPolicy);
+    //}
 
     @Bean
     public GemfireLockRegistry gemfireLockRegistry(GemFireCache gemFireCache) {

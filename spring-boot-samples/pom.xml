@@ -134,6 +134,7 @@
         <module>spring-boot-redis-ratelimit</module>
         <module>springboot-echarts</module>
         <module>springboot-socketio</module>
+        <module>spring-boot-upload-file/spring-boot-big-file-upload</module>
     </modules>
 
     <properties>
