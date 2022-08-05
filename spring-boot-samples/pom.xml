@@ -135,6 +135,7 @@
         <module>springboot-echarts</module>
         <module>springboot-socketio</module>
         <module>spring-boot-upload-file/spring-boot-big-file-upload</module>
+        <module>spring-boot-double-cache</module>
     </modules>
 
     <properties>

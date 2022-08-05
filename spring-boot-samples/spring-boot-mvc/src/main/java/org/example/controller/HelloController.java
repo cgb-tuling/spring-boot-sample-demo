@@ -1,10 +1,9 @@
 package org.example.controller;
 
+import org.example.entity.User;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
 public class HelloController {
@@ -21,4 +20,10 @@ public class HelloController {
         return "index";
     }
 
+    @PostMapping("/ampTest")
+    @ResponseBody
+    public User ampTest(@RequestBody User user) {
+        System.out.println(user);
+        return user;
+    }
 }
